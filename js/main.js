@@ -1,11 +1,37 @@
     console.log("로딩완료");
-    /*마우스 커서*/
-    function resultFun(x) {
-        var positionLeft = x.clientX;
-        var positionTop = x.clientY;
-        document.getElementById('mouse').style.left = positionLeft - 10 + "px";
-        document.getElementById('mouse').style.top = positionTop - 10 + "px";
+
+    /* 부드러운 화면전환 */
+    $("body").css("display", "none");
+    $("body").fadeIn(2000);
+    $("a.transition").click(function (event) {
+        event.preventDefault();
+        linkLocation = this.href;
+        $("body").fadeOut(1000, redirectPage);
+    });
+
+    function redirectPage() {
+        window.location = linkLocation;
     }
+
+
+    출처: https: //sweet-myo.tistory.com/168 [달콤한환상]
+
+
+
+
+
+
+
+
+
+        /*마우스 커서*/
+
+        function resultFun(x) {
+            var positionLeft = x.clientX;
+            var positionTop = x.clientY;
+            document.getElementById('mouse').style.left = positionLeft - 10 + "px";
+            document.getElementById('mouse').style.top = positionTop - 10 + "px";
+        }
     if (document.addEventListener) {
         document.addEventListener("mousemove", resultFun);
     } else if (document.attachEvent) {
@@ -86,23 +112,6 @@
 
 
 
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
 
         ////////////about 영역 ////////////////
         ///// 로드구역 /////
