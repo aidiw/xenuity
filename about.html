@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="utf-8">
+	<title>xenuity</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+	<!-- Link Swiper's CSS -->
+	<link rel="stylesheet" href="css/main.css">
+	<script src="js/jquery-3.4.1.min.js"></script>
+	<script src="js/jquery-ui.min.js"></script>
+	<script src="js/main.js"></script>
+	<script>
+		///// 로드구역 /////
+		$(function() { ////////////////////JQB//////////////////////////////////////
+			function isElementUnderBottom(elem, triggerDiff) {
+				const {
+					top
+				} = elem.getBoundingClientRect();
+				const {
+					innerHeight
+				} = window;
+				return top > innerHeight + (triggerDiff || 0);
+			}
+
+			function handleScroll() {
+				const elems = document.querySelectorAll('.up-on-scroll');
+				elems.forEach(elem => {
+					if (isElementUnderBottom(elem, -20)) {
+						elem.style.opacity = "0";
+						elem.style.transform = 'translateY(70px)';
+					} else {
+						elem.style.opacity = "1";
+						elem.style.transform = 'translateY(0px)';
+					}
+				})
+			}//////////handlescroll
+
+			window.addEventListener('scroll', handleScroll);
+		}) ////////////////////////////////////////////////////////////////////////
+		//////////////////////////JQB/////////////////////////////////////////////
+		//////////////////////////////////////////////////////////////////////////
+
+	</script>
+</head>
+
+<body>
+	<!-- 마우스 커서 효과 -->
+	<div id="result"></div>
+	<!-- 헤더 영역 -->
+	<header class="header fixed">
+		<h1 class="header_logo">
+			<a href="index.html">
+				<img src="images/header_logo_wh.png" alt="로고">
+			</a>
+		</h1>
+		<ul id="gnb">
+			<li><a href="about.html">ABOUT</a></li>
+            <li><a href="work.html">WORK</a></li>
+            <li><a href="contact.html">CONTACT</a></li>
+            <li><a href="story.html">STORY </a></li>
+		</ul>
+	</header>
+	<!--about섹션영역-->
+	<section class="about">
+		<!--제목 및 내용-->
+		<div class="about_title">
+			<h2>ABOUT US</h2>
+			<p>Creative Studio Design</p>
+			<h3>A design studio chasing different values</h3>
+			<p>
+				XENUITY is a compound word of prefix “XEN”, which means different or heterogeneity and “UNITY”, which means<br> harmony or integration. It also means a combination that workers who have different characteristics are combined<br> and then they are transformed into another organizations.
+			</p>
+		</div>
+		<!-- 포트폴리오 버튼 -->
+		<div class="about_btn">
+			<a href="#" class="btn portfolio">
+				Portfolio Download
+			</a>
+			<a href="#" class="btn download">
+				Download Now
+			</a>
+		</div>
+		<!-- 클라이언트 리스트 영역-->
+		<div class="about_client">
+			<h3>
+				Our Clients
+			</h3>
+			<p>
+				Proudly served some of the most famous brands:
+			</p>
+		</div>
+		<ul class="client_list up-on-scroll">
+			<li class="client_img up-on-scroll"><img src="images/about/001.png" alt=""></li>
+			<li class="client_img up-on-scroll"><img src="images/about/002.png" alt=""></li>
+			<li class="client_img up-on-scroll"><img src="images/about/003.png" alt=""></li>
+			<li class="client_img up-on-scroll"><img src="images/about/004.png" alt=""></li>
+			<li class="client_img up-on-scroll"><img src="images/about/005.png" alt=""></li>
+			<li class="client_img up-on-scroll"><img src="images/about/006.png" alt=""></li>
+			<li class="client_img up-on-scroll"><img src="images/about/007.png" alt=""></li>
+			<li class="client_img up-on-scroll"><img src="images/about/008.png" alt=""></li>
+			<li class="client_img up-on-scroll"><img src="images/about/009.png" alt=""></li>
+			<li class="client_img up-on-scroll"><img src="images/about/010.png" alt=""></li>
+			<li class="client_img up-on-scroll"><img src="images/about/011.png" alt=""></li>
+			<li class="client_img up-on-scroll"><img src="images/about/012.png" alt=""></li>
+			<li class="client_img up-on-scroll"><img src="images/about/013.png" alt=""></li>
+			<li class="client_img up-on-scroll"><img src="images/about/014.png" alt=""></li>
+		</ul>
+		<!-- 클라이언트 부제-->
+		<div class="subt up-on-scroll">
+			<h3>
+				We will help your corporation to grow up<br>
+				more truthful and moving brand.
+			</h3>
+			<p>
+				On the basis of a variety of experience and ability, we will show design that you can confide more.<br>
+				We promise a smooth project progression by generous and<br> comfortable conversation and
+				the flexible way of working.
+			</p>
+		</div>
+		<!-- 컨택트페이지 연결박스 -->
+		<div class="contact_box up-on-scroll">
+			<h4>
+				Let`s Talk
+			</h4>
+			<h2>
+				<a href="contact.html">CONTACT</a>
+			</h2>
+		</div>
+		<!-- 원페이지 하단 스위치 영역-->
+		<div class="about_bottom_switch up-on-scroll">
+			<a href="#" class="switch sound">
+				<img src="images/icn_sound.png" alt="사운드">
+				SOUND - <span>ON</span>
+			</a>
+			<a href="#" class="switch share">
+				FOLLOW - ME
+				<img src="images/icn_share.png" alt="공유">
+			</a>
+		</div>
+	</section>
+
+</body>
+
+</html>
