@@ -16,6 +16,7 @@ body {
 
 
 /*부드러운 화면전환*/
+
 body {
     animation: fadein 2000ms ease-out;
     -moz-animation: fadein 2000ms ease-out;
