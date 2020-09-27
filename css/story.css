@@ -19,7 +19,7 @@ p {
 	margin: 0;
 }
 
-.about {
+.story {
 	position: absolute;
 	top: 240px;
 	color: #fff;
@@ -28,7 +28,7 @@ p {
 	overflow: hidden;
 }
 
-.about h2 {
+.story h2 {
 	font-size: 3.5vw;
 	margin-bottom: 25px;
 }
@@ -39,14 +39,14 @@ p {
 	color: #666;
 }
 
-.about h3 {
+.story h3 {
 	font-size: 36px;
 	margin-top: 180px;
 }
 
 /* 버튼영역 */
 
-.about_btn {
+.story_btn {
 	margin-top: 40px;
 	position: relative;
 }
@@ -81,7 +81,7 @@ p {
 
 /* 클라이언트 영역 */
 
-.about_client h3 {
+.story_client h3 {
 	margin-bottom: 20px;
 }
 
@@ -141,9 +141,9 @@ p {
 
 /* 하단 영역*/
 
-.about_bottom_switch {
+.story_bottom_switch {
 	position: relative;
-	padding-top: 115px;
+	margin-top: 115px;
 	bottom: 58px;
 	width: 100%;
 }
@@ -175,3 +175,71 @@ p {
 	line-height: 45px;
 	font-size: 14px;
 }
+
+
+/*******************************************************/
+.story{
+    text-align: center;
+}
+
+
+/* 리크루트 이미지랩 */
+.recwrap{
+    width: 70%;
+    margin: 0 auto;
+}
+.recwrap img{
+    width: 100%;
+}
+
+.date a{
+    font-size: 14px;
+    color: #666;
+}
+
+.date a:hover{
+    color: #fff;
+}
+
+
+.tit_sub a{
+    font-size: 36px;
+    text-align: center;
+}
+
+
+.tit_sub ul{
+    display: block;
+}
+
+.link {
+	position: relative;
+	padding-left: 60px;
+	display: inline-block;
+	white-space: nowrap;
+    height: 12px;
+    
+}
+.link a{
+    position: relative;
+    top: 0;
+}
+
+.link span:hover {
+	transform: translate3d(0, -105%, 0);
+}
+.link span {
+	display: inline-block;
+	position: relative;
+	transition: transform .3s;
+	font-size: 12px;
+	font-weight: 700;
+}
+
+.link span::before {
+	position: absolute;
+	content: attr(data-hover);
+	top: 105%;
+    color: #fff;
+}
+
