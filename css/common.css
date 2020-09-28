@@ -5,7 +5,7 @@ body {
 }
 
 #mouse {
-    position: absolute;
+    position: fixed;
     background: #fff;
     width: 30px;
     height: 30px;
