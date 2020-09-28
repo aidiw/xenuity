@@ -326,7 +326,7 @@ a {
 }
 
 #page1 {
-	background: url(../images/main_bg_1.1.jpg) no-repeat top/cover;
+	background: url(../images/main_bg_1.jpg) no-repeat top/cover;
 }
 
 #page2 {
@@ -338,19 +338,19 @@ a {
 }
 
 #page4 {
-	background: url(../images/main_bg_1.jpg) no-repeat top/cover;
+	background: url(../images/main_bg_4.jpg) no-repeat top/cover;
 }
 
 #page5 {
-	background: url(../images/main_bg_1.2.jpg) no-repeat top/cover;
+	background: url(../images/main_bg_5.jpg) no-repeat top/cover;
 }
 
 #page6 {
-	background: url() no-repeat top/cover;
+	background: url(../images/main_bg_6.jpg) no-repeat top/cover;
 }
 
 #page7 {
-	background: url() no-repeat top/cover;
+	background: url(../images/main_bg_7.jpg) no-repeat top/cover;
 }
 
 /* 검수용 이미지 */
