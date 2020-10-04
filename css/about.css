@@ -163,15 +163,3 @@ p {
 	right: 80px;
 }
 
-.btn_more {
-	position: absolute;
-	left: calc(50% - 52.5px);
-	bottom: 0px;
-	width: 105px;
-	height: 45px;
-	border: 2px solid #fff;
-	border-radius: 30px;
-	text-align: center;
-	line-height: 45px;
-	font-size: 14px;
-}

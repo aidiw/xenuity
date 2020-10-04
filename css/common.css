@@ -5,13 +5,7 @@ body {
 }
 
 #mouse {
-    position: fixed;
-    background: #fff;
-    width: 30px;
-    height: 30px;
-    opacity: 0.4;
-    border-radius: 100%;
-    z-index: 1;
+
 }
 
 
@@ -74,4 +68,4 @@ body {
 }
 
 
-출처: https: //sweet-myo.tistory.com/168 [달콤한환상]
+
