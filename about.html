@@ -9,6 +9,8 @@
 	<script src="js/jquery-3.4.1.min.js"></script>
 	<script src="js/jquery-ui.min.js"></script>
 	<script src="js/common.js"></script>
+	<!-- tweenmax -->
+	<script src="http://cdnjs.cloudflare.com/ajax/libs/gsap/latest/TweenMax.min.js"></script>
 </head>
 
 <body>
@@ -74,13 +76,10 @@
 			</p>
 		</div>
 		<!-- 포트폴리오 버튼 -->
-		<div class="about_btn">
-			<a href="#" class="btn portfolio">
-				Portfolio Download
-			</a>
-			<a href="#" class="btn download">
-				Download Now
-			</a>
+		<div class="btn_box downb">
+			<div class="btn_wrap downw">
+				<div class="btn_span" data-hover="Download">Portfolio</div>
+			</div>
 		</div>
 		<!-- 클라이언트 리스트 영역-->
 		<div class="about_client">
@@ -131,7 +130,7 @@
 		<!-- 원페이지 하단 스위치 영역-->
 		<div class="about_bottom_switch up-on-scroll">
 			<a href="#" class="switch sound">
-				<img src="images/icn_sound.png" alt="사운드">
+				<img src="images/sound.gif" alt="사운드">
 				SOUND - <span>ON</span>
 			</a>
 			<a href="#" class="switch share">

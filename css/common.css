@@ -1,3 +1,5 @@
+@charset "utf-8";
+/******** 공동설정 *******/
 html,
 body {
     list-style: none;
@@ -20,7 +22,6 @@ body {
     -o-animation: fadein 2000ms ease-out;
     /* Opera */
 }
-
 @keyframes fadein {
     from {
         opacity: 0;
@@ -49,23 +50,19 @@ body {
     from {
         opacity: 0;
     }
-
     to {
         opacity: 1;
     }
 }
 
 @-o-keyframes fadein {
-
     /* Opera */
     from {
         opacity: 0;
     }
-
     to {
         opacity: 1;
     }
 }
-
 
 

@@ -1,8 +1,10 @@
 @charset "utf-8";
+
 /* 스크롤시 페이드인 */
-body{
+body {
 	position: relative;
 }
+
 .up-on-scroll {
 	transition: transform 1s, opacity 3s;
 }
@@ -46,39 +48,20 @@ p {
 
 /* 버튼영역 */
 
-.about_btn {
-	margin-top: 40px;
-	position: relative;
-}
-
-/* 포트폴리오 버튼*/
-.portfolio {
+.downb {
 	position: absolute;
 	display: block;
-	left: calc(50% - 100px);
-	border: 1px solid #fff;
+}
+
+.downw {
 	width: 200px;
 	height: 44px;
 	line-height: 44px;
+	bottom: 0px;
+	border-radius: 30px;
 	text-align: center;
-	border-radius: 25px;
-	font-size: 15px;
+	border: 2px solid #fff;
 }
-
-/* 다운로드 버튼 */
-.download {
-	position: absolute;
-	display: none;
-	left: calc(50% - 100px);
-	border: 1px solid #fff;
-	width: 200px;
-	height: 44px;
-	line-height: 44px;
-	text-align: center;
-	border-radius: 25px;
-	font-size: 15px;
-}
-
 /* 클라이언트 영역 */
 
 .about_client h3 {
@@ -94,8 +77,8 @@ p {
 
 .client_list li {
 	border: 1px solid #777;
-	margin-top:-1px;
-	margin-left:-1px;
+	margin-top: -1px;
+	margin-left: -1px;
 }
 
 .client_list img {
@@ -125,13 +108,14 @@ p {
 	font-size: 14px;
 }
 
-.contact_box h2 a{
+.contact_box h2 a {
 	padding-top: 22px;
 	font-size: 67px;
 	color: #000;
 	text-shadow: -1px 0 #fff, 0 1px #fff, 1px 0 #fff, 0 -1px #fff;
 }
-.contact_box h2 a:hover{
+
+.contact_box h2 a:hover {
 	color: #fff;
 	transition: 0.6s
 }
@@ -162,4 +146,3 @@ p {
 	position: absolute;
 	right: 80px;
 }
-
