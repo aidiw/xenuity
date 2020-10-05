@@ -85,121 +85,120 @@
 
 
 
-
-
-
     	// 스크롤 스와이퍼 플러그인//
 
 
     	/////////////////////마우스 이동시 섹션 무브///////////////////////
 
-    	/* Store the element in el */
-//    	let ele = document.getElementsByClassName('tilt');
-    	let ele = $('.tilt');
+    	    	/* Store the element in el */
+    	    	//    	let ele = document.getElementsByClassName('tilt');
+    	    	let ele = $('.tilt');
+    	
+    	    	/* Get the height and width of the element */
+    	    	const height = ele.height();
+    	    	const width = ele.width();
+    	
+    	    	/*
+    	    	 * Add a listener for mousemove event
+    	    	 * Which will trigger function 'handleMove'
+    	    	 * On mousemove
+    	    	 */
+    	
+    	
+    	    	ele.mousemove(function (e) {
+    	
+    	    		/*
+    	    		 * Get position of mouse cursor
+    	    		 * With respect to the element
+    	    		 * On mouseover
+    	    		 */
+    	    		/* Store the x position */
+    	    		const xVal = e.pageX;
+    	    		/* Store the y position */
+    	    		const yVal = e.pageY;
+    	
+    	    		/*
+    	    		 * Calculate rotation valuee along the Y-axis
+    	    		 * Here the multiplier 20 is to
+    	    		 * Control the rotation
+    	    		 * You can change the value and see the results
+    	    		 */
+    	    		const yRotation = 2 * ((xVal - width / 2) / width);
+    	
+    	    		/* Calculate the rotation along the X-axis */
+    	    		const xRotation = -2 * ((yVal - height / 2) / height);
+    	
+    	    		/* Generate string for CSS transform property */
+    	    		const string = 'perspective(500px) scale(1) rotateX(' + xRotation + 'deg) rotateY(' + yRotation + 'deg)';
+    	
+    	
+    	
+    	    		/* Apply the calculated transformation */
+    	    		//    		obj.style.transform = string
+    	    		$(this).css({
+    	    			transform: string
+    	    		});
+    	
+    	
+    	    	});
 
-    	/* Get the height and width of the element */
-    	const height = ele.height();
-    	const width = ele.width();
+    				ele[i].addEventListener('mousemove', function(){handleMove(event,ele[i]);});
 
-    	/*
-    	 * Add a listener for mousemove event
-    	 * Which will trigger function 'handleMove'
-    	 * On mousemove
-    	 */
-		
-		
-		ele.mousemove(function(e){
-			
-    		/*
-    		 * Get position of mouse cursor
-    		 * With respect to the element
-    		 * On mouseover
-    		 */
-    		/* Store the x position */
-    		const xVal = e.pageX;
-    		/* Store the y position */
-    		const yVal = e.pageY;
 
-    		/*
-    		 * Calculate rotation valuee along the Y-axis
-    		 * Here the multiplier 20 is to
-    		 * Control the rotation
-    		 * You can change the value and see the results
-    		 */
-    		const yRotation = 3 * ((xVal - width / 2) / width);
 
-    		/* Calculate the rotation along the X-axis */
-    		const xRotation = -3 * ((yVal - height / 2) / height);
+    	    	/* Store the element in el */
+    	    	//    	let ele = document.getElementsByClassName('tilt');
+//    	    	let ele = $('.tilt');
+//    	
+//    	    	/* Get the height and width of the element */
+//    	    	const height = ele.height();
+//    	    	const width = ele.width();
+//
+//    	    	/* Define function a */
+//    	    	function handleMove(e,obj) {
+//    				console.log(e+"/"+obj);
+//    	    		/*
+//    	    		 * Get position of mouse cursor
+//    	    		 * With respect to the element
+//    	    		 * On mouseover
+//    	    		 */
+//    	    		/* Store the x position */
+//    	    		const xVal = e.layerX
+//    	    		/* Store the y position */
+//    	    		const yVal = e.layerY
+//    	
+//    	    		/*
+//    	    		 * Calculate rotation valuee along the Y-axis
+//    	    		 * Here the multiplier 20 is to
+//    	    		 * Control the rotation
+//    	    		 * You can change the value and see the results
+//    	    		 */
+//    	    		const yRotation = 2 * ((xVal - width / 1) / width)
+//    	
+//    	    		/* Calculate the rotation along the X-axis */
+//    	    		const xRotation = -2 * ((yVal - height / 1) / height)
+//    	
+//    	    		/* Generate string for CSS transform property */
+//    	    		const string = 'perspective(500px) scale(1.08) rotateX(' + xRotation + 'deg) rotateY(' + yRotation + 'deg)'
+//    	
+//    	    		/* Apply the calculated transformation */
+//    	//    		obj.style.transform = string
+//    				obj.css({
+//    					transform: string
+//    				});
+//    	    	}///////////////////////////////마우스무브화면무브//////////////////////////////////
+//
 
-    		/* Generate string for CSS transform property */
-    		const string = 'perspective(500px) rotateX(' + xRotation + 'deg) rotateY(' + yRotation + 'deg)';
 
-    		/* Apply the calculated transformation */
-//    		obj.style.transform = string
-			$(this).css({
-				transform: string
-			});
-		});
-//			ele[i].addEventListener('mousemove', function(){handleMove(event,ele[i]);});
-		
+    	//////////////////////////////마그네틱 버튼////////////////////////////
 
-    	/* Define function a */
-    	function handleMove(e,obj) {
-			console.log(e+"/"+obj);
-    		/*
-    		 * Get position of mouse cursor
-    		 * With respect to the element
-    		 * On mouseover
-    		 */
-    		/* Store the x position */
-    		const xVal = e.layerX
-    		/* Store the y position */
-    		const yVal = e.layerY
 
-    		/*
-    		 * Calculate rotation valuee along the Y-axis
-    		 * Here the multiplier 20 is to
-    		 * Control the rotation
-    		 * You can change the value and see the results
-    		 */
-    		const yRotation = 2 * ((xVal - width / 1) / width)
 
-    		/* Calculate the rotation along the X-axis */
-    		const xRotation = -2 * ((yVal - height / 1) / height)
 
-    		/* Generate string for CSS transform property */
-    		const string = 'perspective(500px) scale(1.08) rotateX(' + xRotation + 'deg) rotateY(' + yRotation + 'deg)'
 
-    		/* Apply the calculated transformation */
-//    		obj.style.transform = string
-			obj.css({
-				transform: string
-			});
-    	}///////////////////////////////마우스무브화면무브//////////////////////////////////
 
-		
-		
-		//////////////////////////////마그네틱 버튼////////////////////////////
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
+
+
 
     }); ////// jQB //////////////////////////
     ////////////////////////////////////////

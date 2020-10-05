@@ -201,7 +201,9 @@ p {
     color: #fff;
 }
 
-
+.tit_sub{
+	text-align: center;
+}
 .tit_sub a{
     font-size: 36px;
     text-align: center;
@@ -214,32 +216,32 @@ p {
 
 .link {
 	position: relative;
-	padding-left: 60px;
-	display: inline-block;
-	white-space: nowrap;
     height: 12px;
-    
-}
-.link a{
-    position: relative;
-    top: 0;
+	left: -50px;
+	
+	margin-bottom: 100px;
+	width: 100%;
+	
+	    
 }
 
-.link span:hover {
-	transform: translate3d(0, -105%, 0);
+.btn_wrap:hover .btn_span {
+	transform: translate3d(0, -100%, 0);
 }
-.link span {
-	display: inline-block;
-	position: relative;
+
+.btn_wrap {
+	overflow: hidden;
+}
+
+.btn_span {
 	transition: transform .3s;
 	font-size: 12px;
 	font-weight: 700;
 }
 
-.link span::before {
+.btn_span::before {
 	position: absolute;
 	content: attr(data-hover);
-	top: 105%;
-    color: #fff;
+	top: 100%;
 }
 

@@ -91,16 +91,27 @@ input[type="text"] {
 	clear: both;
 	content: "";
 }
-
-.namebox input, .emailbox input{
-	width: 45%;
+/*네임 박스*/
+.namebox input{
+	width: 46%;
     float: left;
     margin-bottom: 20px;
     position: relative;
 	margin-right:5%;
 	color:#fff;
 }
+/*이메일 박스*/
+.emailbox input{
+	width: 49%;
+    float: left;
+    margin-bottom: 20px;
+    position: relative;
+	color:#fff;
+}
 
+
+
+/*텍스트 에어리어*/
 textarea {
     resize: none;
     margin-bottom: 0;
