@@ -5,21 +5,7 @@
     console.log("페이지구분:" + pgname);
 
 
-    //    /*마우스 커서*/
-    //
-    //    function resultFun(x) {
-    //    	var positionLeft = x.clientX;
-    //    	var positionTop = x.clientY;
-    //    	document.getElementById('mouse').style.left = positionLeft - 10 + "px";
-    //    	document.getElementById('mouse').style.top = positionTop - 10 + "px";
-    //    }
-    //    if (document.addEventListener) {
-    //    	document.addEventListener("mousemove", resultFun);
-    //    } else if (document.attachEvent) {
-    //    	document.attachEvent("onmousemove", resultFun);
-    //    	//attachEvent는 IE8이하와 오페라에서 사용하는 명령어이다 };
-    //    }
-    //
+
 
 
 

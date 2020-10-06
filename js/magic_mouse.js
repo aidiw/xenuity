@@ -61,15 +61,18 @@ function magicMouse(e) {
 			if (h = !0, r) {
 				r.style.transition = "transform 0.2s, width 0.3s, height 0.3s, border-radius 0.2s", r.classList.add("is-hover");
 				var t = event.currentTarget.getBoundingClientRect();
-				e.classList.contains("magic-hover__square") ? (r.classList.add("cursor-square"), u = t.left, d = t.top, i = t.width, a = t.height) : (u = t.left, d = t.top, i = t.width, a = t.height)
-			//	console.log(t.height);
-			//	console.log(i);
+				e.classList.contains("magic-hover__square") ?
+					(r.classList.add("cursor-square"),
+						u = t.left-25, d = t.top-40, i = 100, a = 100) :
+					(u = t.left-25, d = t.top-40, i = 100, a = 100)
+				//	console.log(t.height);
+				//	console.log(i);
 			}
-			o && o.classList.add("is-hover")//////마우스 엔터시
+			o && o.classList.add("is-hover") //////마우스 엔터시
 		},
 		g = () => {
 			h = !1, r && (i = n, a = c, r.style.transition = "transform 0.07s, width 0.3s, height 0.3s, border-radius 0.2s", r.classList.remove("cursor-square"), r.classList.remove("is-hover")), o && o.classList.remove("is-hover")
-		},/////////////////// 마우스 떠나고나서 
+		}, /////////////////// 마우스 떠나고나서 
 		y = (e, t) => {
 			o && o.classList.add(t)
 		},
@@ -82,3 +85,18 @@ function magicMouse(e) {
 			})
 		}
 }
+//
+//$("a").hover(
+//	function () {
+//		mouse.css({
+//			transform: "scale(1.5)",
+//			opacity: .5,
+//			transition: "transform .3s ease-out"
+//		});
+//	},
+//	function () {
+//		mouse.css({
+//			transform: "scale(1)",
+//			opacity: 1
+//		});
+//	}); ////////// hover /////////////
