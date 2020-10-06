@@ -2,6 +2,7 @@
 /* main.css - 메인페이지 CSS */
 
 /*파일 merging(합치기)*/
+@import url(magic-mouse.css);
 @import url(common.css);
 @import url(swiperplugin.css);
 @import url(swiper.min.css);
@@ -58,6 +59,19 @@ a {
 	font-weight: bold;
 }
 
+
+
+
+/* 따라다니는 마우스 */
+#mouse {
+	position: fixed;
+	background: #fff;
+	width: 30px;
+	height: 30px;
+	opacity: .4;
+	border-radius: 100%;
+	z-index: 2;
+}
 
 /* 상단 헤더 영역 */
 .fixed {
@@ -313,7 +327,7 @@ a {
 }
 
 /* more버튼 attr 속성 변환 효과*/
-/* 버튼 마그네틱 설정*/
+/* 호버 버튼 마그네틱 설정*/
 .btn_box {
 	width: 100px;
 	height: 100px;

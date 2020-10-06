@@ -7,19 +7,20 @@
 	<title>xenuity</title>
 	<!-- css -->
 	<link rel="stylesheet" href="css/main.css">
+	<!--마우스-->
+	<link rel="stylesheet" href="css/magic-mouse.css">
 	<!-- script -->
 	<script src="js/jquery-3.4.1.min.js"></script>
 	<script src="js/jquery-ui.min.js"></script>
+	<script src="js/common.js"></script>
 	<script src="js/swiper.min.js"></script>
 	<script src="js/main.js"></script>
-	<script src="js/common.js"></script>
+	<script src="js/magic_mouse.js"></script>
 	<!-- tweenmax -->
 	<script src="http://cdnjs.cloudflare.com/ajax/libs/gsap/latest/TweenMax.min.js"></script>
 </head>
 
 <body>
-	<!-- 마우스 커서 효과 -->
-	<div id="mouse"></div>
 	<!-- 헤더영역 -->
 	<header class="header fixed">
 		<h1 class="header_logo">
@@ -29,9 +30,9 @@
 		</h1>
 		<nav class="navigation">
 			<ul id="gnb">
-				<li class="gnb_list">
+				<li class="gnb_list" >
 					<a href="about.html" class="gnb_link">
-						<span class="gnb_title">
+						<span class="gnb_title magic-hover">
 							<span class="gnb_span" data-hover="A B O U T">
 								A B O U T
 							</span>
@@ -40,7 +41,7 @@
 				</li>
 				<li class="gnb_list">
 					<a href="work.html" class="gnb_link">
-						<span class="gnb_title">
+						<span class="gnb_title  magic-hover">
 							<span class="gnb_span" data-hover="W O R K">
 								W O R K
 							</span>
@@ -50,7 +51,7 @@
 				<li class="gnb_list">
 					<a href="contact.html" class="gnb_link">
 						<span class="gnb_title">
-							<span class="gnb_span" data-hover="C O N T A C T">
+							<span class="gnb_span  magic-hover" data-hover="C O N T A C T">
 								C O N T A C T
 							</span>
 						</span>
@@ -59,7 +60,7 @@
 				<li class="gnb_list">
 					<a href="story.html" class="gnb_link">
 						<span class="gnb_title">
-							<span class="gnb_span" data-hover="S T O R Y">
+							<span class="gnb_span  magic-hover" data-hover="S T O R Y">
 								S T O R Y
 							</span>
 						</span>
@@ -130,11 +131,20 @@
 			</div>
 		</div>
 	</footer>
-
-
+	<!-- 마우스 커서 효과 -->
+	<script type="text/javascript">
+		options = {
+			"cursorOuter": "circle-basic",
+			"hoverEffect": "circle-move",
+			"hoverItemMove": false,
+			"defaultCursor": false,
+			"outerWidth": 40,
+			"outerHeight": 40,
+		};
+		magicMouse(options);
+	</script>
 
 	<!-- 검수용 완성 이미지 -->
 	<!--<img src="design/main.png" class="vi">-->
-
 
 </body></html>
