@@ -19,16 +19,424 @@
 /*1200px이하 사이즈*/
 @media only screen and (max-width:1466px) {
 
-	/*
-    전체글자조정
-    rem으로 코딩된 사이즈는 
-    root인 html의 글자크기를
-    기준으로 변경된다!*/
+
+	h2 {
+		font-size: 70px;
+	}
+
+	body,
 	html {
-		font-size: 20px;
-		/*기본 사이즈는 16px임, html의 글자크기를 바꾸면 하위 요소들 중 rem, em에 계산 기준이 됨.*/
+		position: relative;
+	}
+
+	li {
+		list-style: none;
+	}
+
+	a {
+		text-decoration: none;
+		outline: 0;
+		color: #fff;
+		font-weight: bold;
+	}
+
+
+
+
+	/* 따라다니는 마우스 */
+	#mouse {
+		position: fixed;
+		background: #fff;
+		width: 30px;
+		height: 30px;
+		opacity: .4;
+		border-radius: 100%;
+		z-index: 2;
+	}
+
+	/* 상단 헤더 영역 */
+	.fixed {
+		position: fixed;
+		z-index: 2;
+	}
+
+	.header {
+		width: 100%;
+	}
+
+	.header_logo {
+		position: absolute;
+		top: 56px;
+		left: 86px;
+	}
+
+	/* 헤더 gnb 부분 */
+	.navigation {
+		width: 100%;
+	}
+
+	#gnb {
+		position: absolute;
+		display: flex;
+		top: 53px;
+		right: 85px;
+		height: 10px;
+	}
+
+	.gnb_list {
+		position: relative;
+		padding-left: 60px;
+		display: inline-block;
+		white-space: nowrap;
+	}
+
+	.gnb_link:hover .gnb_span {
+		transform: translate3d(0, -105%, 0);
+	}
+
+	.gnb_title {
+		display: inline-block;
+		overflow: hidden;
+	}
+
+	.gnb_span {
+		display: inline-block;
+		position: relative;
+		transition: transform .3s;
+		font-size: 12px;
+		font-weight: 700;
+	}
+
+	.gnb_span::before {
+		position: absolute;
+		content: attr(data-hover);
+		top: 105%;
+	}
+
+	/*** 중단영역 ***/
+
+	.counter_wrap {
+		z-index: 0;
+	}
+
+	.counter {
+		position: absolute;
+		width: 50px;
+		height: 20px;
+		bottom: 38px;
+		left: 180px;
+		text-align: center;
+		opacity: 1;
+		font-size: 14px;
+	}
+
+	.counter_total {
+		position: absolute;
+		width: 50px;
+		height: 20px;
+		bottom: 38px;
+		left: 230px;
+		text-align: center;
+		font-size: 14px;
+		opacity: 1;
+	}
+
+	.counter_total::before {
+		content: "";
+		position: absolute;
+		width: 1px;
+		height: 10px;
+		bottom: 5px;
+		right: 50px;
+		background-color: #fff;
+		opacity: .2;
+	}
+
+
+	/* 중단 타이틀 선 랩*/
+	.mid_wrap {
+		display: flex;
+		bottom: 30%;
+		width: 100%;
+	}
+
+
+	/*갤리러박스*/
+	.gbox {
+		position: relative;
+		/*부모자격*/
+		width: 30%;
+		/*height: 300px;*/
+		/*outline: 1px solid red*/
+		left: 0;
+		margin: 0 auto;
+	}
+
+	.gbox h2 {
+		position: absolute;
+		/*이미지 위치이동(박스기준)*/
+		width: 100%;
+		transition: all 1.5s ease-in-out;
+		bottom: 30%;
+		/*트랜지션*/
+	}
+
+	.gbox span {
+		float: left;
+	}
+
+
+	/*개별설정*/
+
+
+	/*중앙이미지*/
+	.gbox h2:nth-child(1) {
+		left: 0;
+	}
+
+	/*오른쪽이미지 1*/
+	.gbox h2:nth-child(2) {
+		left: 110%;
+		opacity: 0
+	}
+
+	/*오른쪽이미지 2*/
+	.gbox h2:nth-child(3) {
+		left: 210%;
+		opacity: 0;
+	}
+
+	/*왼쪽이미지 2*/
+	.gbox h2:nth-child(4) {
+		left: 310%;
+		opacity: 0
+	}
+
+	/*왼쪽이미지 1*/
+	.gbox h2:nth-child(5) {
+		left: -410%;
+		opacity: 0
+	}
+
+	/*왼쪽이미지 1*/
+	.gbox h2:nth-child(6) {
+		left: -410%;
+		opacity: 0
+	}
+
+	/*왼쪽이미지 1*/
+	.gbox h2:nth-child(7) {
+		left: -410%;
+		opacity: 0;
+		left: 30%;
 
 	}
+
+
+
+
+
+
+
+
+
+	/* 중단 구분선*/
+	.counter_border {
+		position: absolute;
+		width: 7%;
+		height: 1px;
+		background-color: #fff;
+		opacity: 0.2;
+		margin: 0 auto;
+		left: 50px;
+		bottom: 50px;
+	}
+
+	.mid_border {
+		position: absolute;
+		width: 8%;
+		height: 1px;
+		background-color: #fff;
+		opacity:0.2;
+		margin: 0 auto;
+	}
+
+	.mid_border.left {
+		left: 310px;
+		bottom: 50px;
+	}
+
+	.left::before {
+		content: "";
+		width: 100%;
+		height: 1px;
+	}
+
+	.mid_border.right {
+		right: 390px;
+		bottom: 50px;
+	}
+
+	.right::after {
+		content: "";
+		width: 90px;
+		height: 1px;
+	}
+
+	/* 버튼 랩 */
+	.arrow_wrap {
+		position: absolute;
+		width: 100px;
+		right: 240px;
+		top: -45px;
+
+	}
+
+
+
+	/* 하단 영역 */
+	/* 하단 버튼 */
+	.bottom_switch {
+		bottom: 58px;
+		width: 100%;
+		z-index: 10;
+	}
+
+	/* 사운드 on/off버튼 */
+	.sound {
+		position: absolute;
+		left: 79px;
+		bottom: 10px;
+		font-size: 12px;
+		line-height: 10px;
+	}
+
+	.sound img {
+		width: 34px;
+		padding-right: 15px;
+		vertical-align: middle;
+	}
+
+	.sound:hover .btn_span {
+		transform: translate3d(0, -105%, 0);
+	}
+
+
+
+	.btn_span {
+		display: inline-block;
+		position: relative;
+		transition: transform .3s;
+		font-size: 12px;
+		font-weight: 700;
+	}
+
+	.btn_span::before {
+		position: absolute;
+		content: attr(data-hover);
+		top: 105%;
+	}
+
+	/* 공유버튼 */
+	.share {
+		position: absolute;
+		right: 80px;
+		bottom: 7px;
+		font-size: 12px;
+	}
+
+	.share img {
+		padding-left: 30px;
+	}
+
+	/* more버튼 attr 속성 변환 효과*/
+	/* 호버 버튼 마그네틱 설정*/
+	.btn_box {
+		width: 100px;
+		height: 100px;
+		left: calc(50% - 50px);
+	}
+
+	.btn_wrap {
+		position: absolute;
+		width: 100px;
+		height: 38px;
+		line-height: 38px;
+		font-size: 14px;
+		cursor: pointer;
+	}
+
+	.moreb {
+		position: absolute;
+		bottom: 0;
+	}
+
+	.morew {
+		border: 2px solid #fff;
+		bottom: 0px;
+		border-radius: 30px;
+		text-align: center;
+
+	}
+
+	/* 호버시 바뀌는 텍스트 버튼*/
+	.btn_wrap:hover .btn_span {
+		transform: translate3d(0, -100%, 0);
+	}
+
+	.btn_wrap {
+		overflow: hidden;
+	}
+
+	.btn_span {
+		transition: transform .3s;
+		font-size: 12px;
+		font-weight: 700;
+	}
+
+	.btn_span::before {
+		position: absolute;
+		content: attr(data-hover);
+		top: 100%;
+	}
+
+
+
+	/* 섹션1 */
+	/*페이지 전체부모*/
+	.wrap {
+		width: 700%;
+		height: 100%;
+		display: flex;
+	}
+
+	.page {
+		position: relative;
+		/*            float: left;*/
+		flex: 1;
+		/*width: 14.285%;*/
+		/*7등분*/
+		height: 100%;
+		/*body의 100%기준*/
+	}
+
+	/*************************/
+	.tilt {
+		transition: box-shadow 0.1s, transform 0.1s;
+		background-size: 100%;
+		background-repeat: no-repeat;
+	}
+
+	.tilt:hover {
+		box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.6);
+		cursor: pointer;
+	}
+
+
+
+
+
+}
 
 
 }
@@ -37,21 +445,12 @@
 
 
 /*1100px 이하 미디어쿼리*/
-@media only screen and (max-width:1100px) {
-
-	
-
-
-}
+@media only screen and (max-width:1100px) {}
 
 /*1100px이하*/
 
 /*1024px 이하 미디어쿼리*/
-@media only screen and (max-width:1024px) {
-
-	
-
-}
+@media only screen and (max-width:1024px) {}
 
 /*1024px 이하 미디어쿼리*/
 
@@ -59,10 +458,6 @@
 
 
 /*500px이하 모바일 미디어쿼리*/
-@media only screen and (max-width:500px) {
-
-	
-
-}
+@media only screen and (max-width:500px) {}
 
 /*500px이하 모바일 미디어쿼리*/
