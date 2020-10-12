@@ -38,6 +38,23 @@
             speed: 1500,
         },);
         
+        //여기수정추가!
+        swiper.on('slideChange', function () {
+            // slideChange 슬라이드 변경 이벤트
+          console.log('slide changed:'+this.activeIndex+'/'+this.previousIndex);
+            // activeIndex 현재도착슬라이드 번호
+            // previousIndex 이전슬라이드 번호
+            var diff = this.activeIndex - this.previousIndex;
+            console.log("차:"+diff);
+            if(diff>0){//다음슬라이드
+                goslide(1);//오른쪽넘기기
+            } ///// if //////////
+            else {//이전슬라이드
+                goslide(0);//오른쪽넘기기
+            } ////// else /////////
+            
+        });
+        
 
 
 
