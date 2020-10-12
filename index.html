@@ -2,213 +2,249 @@
 <html lang="ko">
 
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
-    <title>xenuity</title>
-    <!-- css -->
-    <link rel="stylesheet" href="css/main.css">
-    <link rel="stylesheet" href="css/media.css">
-    <!--마우스-->
-    <link rel="stylesheet" href="css/magic-mouse.css">
-    <!-- script -->
-    <script src="js/jquery-3.4.1.min.js"></script>
-    <script src="js/jquery-ui.min.js"></script>
-    <script src="js/common.js"></script>
-    <script src="js/swiper.min.js"></script>
-    <script src="js/main.js"></script>
-    <script src="js/magic_mouse.js"></script>
-    <!-- tweenmax -->
-    <script src="http://cdnjs.cloudflare.com/ajax/libs/gsap/latest/TweenMax.min.js"></script>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+	<title>X E N U I T Y - Portfolio</title>
+	<!--favicon-->
+	<link rel="shortcut icon" href="../images/favicon.ico"/>
+	<!-- css -->
+	<link rel="stylesheet" href="css/main.css">
+	<link rel="stylesheet" href="css/media.css">
+	<!--마우스-->
+	<link rel="stylesheet" href="css/magic-mouse.css">
+	<!-- script -->
+	<script src="js/jquery-3.4.1.min.js"></script>
+	<script src="js/jquery-ui.min.js"></script>
+	<script src="js/common.js"></script>
+	<script src="js/swiper.min.js"></script>
+	<script src="js/main.js"></script>
+	<script src="js/magic_mouse.js"></script>
+	<!-- tweenmax -->
+	<script src="http://cdnjs.cloudflare.com/ajax/libs/gsap/latest/TweenMax.min.js"></script>
 </head>
 
 <body>
-    <!-- 헤더영역 -->
-    <header class="header fixed">
-        <h1 class="header_logo">
-            <a href="index.html">
-                <img src="images/header_logo_wh.png" alt="로고">
-            </a>
-        </h1>
-        <nav class="navigation">
-            <ul id="gnb">
-                <li class="gnb_list">
-                    <a href="about.html" class="gnb_link">
-                        <span class="gnb_title magic-hover">
-                            <span class="gnb_span" data-hover="A B O U T">
-                                A B O U T
-                            </span>
-                        </span>
-                    </a>
-                </li>
-                <li class="gnb_list">
-                    <a href="work.html" class="gnb_link">
-                        <span class="gnb_title magic-hover">
-                            <span class="gnb_span" data-hover="W O R K">
-                                W O R K
-                            </span>
-                        </span>
-                    </a>
-                </li>
-                <li class="gnb_list">
-                    <a href="contact.html" class="gnb_link">
-                        <span class="gnb_title">
-                            <span class="gnb_span magic-hover" data-hover="C O N T A C T">
-                                C O N T A C T
-                            </span>
-                        </span>
-                    </a>
-                </li>
-                <li class="gnb_list">
-                    <a href="story.html" class="gnb_link">
-                        <span class="gnb_title">
-                            <span class="gnb_span magic-hover" data-hover="S T O R Y">
-                                S T O R Y
-                            </span>
-                        </span>
-                    </a>
-                </li>
-            </ul>
-        </nav>
-    </header>
-    <!-- 중단 영역 -->
-    <div class="mid_wrap fixed">
-        <!--카운터 보더라인-->
-        <div class="counter_border"></div>
-        <div class="counter_wrap">
-            <div class="counter swiper-pagination"></div>
-            <div class="counter_total swiper-pagination-total">7</div>
-        </div>
-        <!-- 중앙 선 -->
-        <div class="mid_border left"></div>
-        <div class="mid_border right"></div>
-        <!--양쪽 애로우버튼-->
-        <div class="arrow_wrap arroww">
-            <a href="#" class="swiper-button-prev pbtn"></a>
-            <a href="#" class="swiper-button-next nbtn"></a>
-        </div>
-        <!--중앙 타이틀-->
-        <!--갤러리이미지박스-->
-       
-        <div class="gbox">
-            <h2>
-                <span>S</span>
-                <span>A</span>
-                <span>M</span>
-                <span>S</span>
-                <span>U</span>
-                <span>N</span>
-                <span>G</span>
-            </h2>
-            <h2>
-                <span>K</span>
-                <span>Y</span>
-                <span>O</span>
-                <span>W</span>
-                <span>O</span>
-                <span>N</span>
-                <p>WELLS</p>
-            </h2>
-            <h2>
-                <span>B</span>
-                <span>E</span>
-                <span></span>
-                <span>L</span>
-                <span>I</span>
-                <span>F</span>
-                <span>+</span>
-                <span>L</span>
-                <span>A</span>
-                <span>B</span>
-            </h2>
-            <h2>
-                <span>T</span>
-                <span>O</span>
-                <span>U</span>
-                <span>R</span>
-                <span>V</span>
-                <span>I</span>
-                <span>S</span>
-            </h2>
-            <h2>
-                <span>L</span>
-                <span>G</span>
-                <span>　</span>
-                <span>T</span>
-                <span>R</span>
-                <span>O</span>
-                <span>M</span>
-            </h2>
-            <h2>
-                <span>L</span>
-                <span>G</span>
-                <span>　</span>
-                <span>G</span>
-                <span>R</span>
-                <span>A</span>
-                <span>M</span>
-            </h2>
-            <h2>
-                <span>K</span>
-                <span>　</span>
-                <span>B</span>
-                <span>R</span>
-                <span>A</span>
-                <span>N</span>
-                <span>D</span>
-                <span>S</span>
-            </h2>
-        </div>
-    </div>
-
-    <!--스와이퍼 슬라이드 -->
-    <div class="swiper-container mcont">
-        <div class="swiper-scrollbar"></div>
-        <div class="swiper-wrapper">
-            <div class="swiper-slide tilt" style="background-image: url(images/main_bg_1.jpg)" data-number="01"></div>
-            <div class="swiper-slide tilt" style="background-image: url(images/main_bg_2.jpg)" data-number="02"></div>
-            <div class="swiper-slide tilt" style="background-image: url(images/main_bg_3.jpg)" data-number="03"></div>
-            <div class="swiper-slide tilt" style="background-image: url(images/main_bg_4.jpg)" data-number="04"></div>
-            <div class="swiper-slide tilt" style="background-image: url(images/main_bg_5.jpg)" data-number="05"></div>
-            <div class="swiper-slide tilt" style="background-image: url(images/main_bg_6.jpg)" data-number="06"></div>
-            <div class="swiper-slide tilt" style="background-image: url(images/main_bg_7.jpg)" data-number="07"></div>
-        </div>
-    </div>
+	<!-- 헤더영역 -->
+	<header class="header fixed">
+		<h1 class="header_logo">
+			<a href="index.html">
+				<img src="images/header_logo_wh.png" alt="로고">
+			</a>
+		</h1>
+		<nav class="navigation">
+			<ul id="gnb">
+				<li class="gnb_list">
+					<a href="about.html" class="gnb_link">
+						<span class="gnb_title magic-hover">
+							<span class="gnb_span" data-hover="A B O U T">
+								A B O U T
+							</span>
+						</span>
+					</a>
+				</li>
+				<li class="gnb_list">
+					<a href="work.html" class="gnb_link">
+						<span class="gnb_title magic-hover">
+							<span class="gnb_span" data-hover="W O R K">
+								W O R K
+							</span>
+						</span>
+					</a>
+				</li>
+				<li class="gnb_list">
+					<a href="contact.html" class="gnb_link">
+						<span class="gnb_title">
+							<span class="gnb_span magic-hover" data-hover="C O N T A C T">
+								C O N T A C T
+							</span>
+						</span>
+					</a>
+				</li>
+				<li class="gnb_list">
+					<a href="story.html" class="gnb_link">
+						<span class="gnb_title">
+							<span class="gnb_span magic-hover" data-hover="S T O R Y">
+								S T O R Y
+							</span>
+						</span>
+					</a>
+				</li>
+			</ul>
+		</nav>
 
 
+	</header>
 
-    <!-- 원페이지 하단 스위치 영역-->
-    <footer class="bottom_switch fixed">
-        <a href="#" class="sound magic-hover">
-            <img src="images/sound.gif" alt="사운드">
-            <span class="btn_wrap">
-                <span class="btn_span" data-hover="S O U N D - O F F "> S O U N D - O N 　</span>
-            </span>
-        </a>
-        <a href="#" class="switch share">
-            F O L L O W - M E
-            <img src="images/icn_share.png" alt="공유">
-        </a>
-        <!-- MORE 버튼 -->
-        <div class="btn_box moreb">
-            <div class="btn_wrap morew">
-                <div class="btn_span magic-hover" data-hover="MORE">MORE</div>
-            </div>
-        </div>
-    </footer>
-    <!-- 마우스 커서 효과 -->
-    <script type="text/javascript">
-        options = {
-            "cursorOuter": "circle-basic",
-            "hoverEffect": "circle-move",
-            "hoverItemMove": false,
-            "defaultCursor": false,
-            "outerWidth": 40,
-            "outerHeight": 40,
-        };
-        magicMouse(options);
-    </script>
+	<!--미디어쿼리 햄버거 메뉴 버튼 -->
+	<button class="menu-toggle"></button>
+	<nav>
+		<ul class="menu">
+			<a href="about.html"><li data-text="ABOUT">ABOUT</li></a>
+			<a href="work.html"><li data-text="WORK">WORK</li></a>
+			<a href="contact.html"><li data-text="CONTACT">CONTACT</li></a>
+			<a href="story.html"><li data-text="STORY">STORY</li></a>
+		</ul>
+	</nav>
+	<!-- 중단 영역 -->
+	<div class="mid_wrap fixed">
+		<!--카운터 보더라인-->
+		<div class="counter_border"></div>
+		<div class="counter_wrap">
+			<div class="counter swiper-pagination"></div>
+			<div class="counter_total swiper-pagination-total">7</div>
+		</div>
+		<!-- 중앙 선 -->
+		<div class="mid_border left"></div>
+		<div class="mid_border right"></div>
+		<!--양쪽 애로우버튼-->
+		<div class="arrow_wrap arroww">
+			<a href="#" class="swiper-button-prev pbtn"></a>
+			<a href="#" class="swiper-button-next nbtn"></a>
+		</div>
+		<!--중앙 타이틀-->
+		<!--갤러리이미지박스-->
+		<div class="sbox">
+			<h4>
+				<span>GRAPICS - FAMILY HUB</span>
+			</h4>
+			<h4>
+				<span>UI/UX - PROPOSAL</span>
+			</h4>
+			<h4>
+				<span>UI/UX - GLOBAL AUDITION</span>
+			</h4>
+			<h4>
+				<span>UI/UX - WEB SERVICE</span>
+			</h4>
+			<h4>
+				<span>GRAPICS - TWIN WASH</span>
+			</h4>
+			<h4>
+				<span>GRAPICS - BLACK EDITION</span>
+			</h4>
+			<h4>
+				<span>UI/UX - FULL RENEWAL</span>
+			</h4>
+		</div>
+		<div class="gbox">
+			<h2>
+				<span>S</span>
+				<span>A</span>
+				<span>M</span>
+				<span>S</span>
+				<span>U</span>
+				<span>N</span>
+				<span>G</span>
+			</h2>
+			<h2>
+				<span>K</span>
+				<span>Y</span>
+				<span>O</span>
+				<span>W</span>
+				<span>O</span>
+				<span>N</span>
+			</h2>
+			<h2>
+				<span>B</span>
+				<span>E</span>
+				<span></span>
+				<span>L</span>
+				<span>I</span>
+				<span>F</span>
+				<span>+</span>
+				<span>L</span>
+				<span>A</span>
+				<span>B</span>
+			</h2>
+			<h2>
+				<span>T</span>
+				<span>O</span>
+				<span>U</span>
+				<span>R</span>
+				<span>V</span>
+				<span>I</span>
+				<span>S</span>
+			</h2>
+			<h2>
+				<span>L</span>
+				<span>G</span>
+				<span>　</span>
+				<span>T</span>
+				<span>R</span>
+				<span>O</span>
+				<span>M</span>
+			</h2>
+			<h2>
+				<span>L</span>
+				<span>G</span>
+				<span>　</span>
+				<span>G</span>
+				<span>R</span>
+				<span>A</span>
+				<span>M</span>
+			</h2>
+			<h2>
+				<span>K</span>
+				<span>-</span>
+				<span>B</span>
+				<span>R</span>
+				<span>A</span>
+				<span>N</span>
+				<span>D</span>
+				<span>S</span>
+			</h2>
+		</div>
+	</div>
 
-    <!-- 검수용 완성 이미지 -->
-    <!--<img src="design/main.png" class="vi">-->
+	<!--스와이퍼 슬라이드 -->
+	<div class="swiper-container mcont">
+		<div class="swiper-scrollbar"></div>
+		<div class="swiper-wrapper">
+			<div class="swiper-slide tilt" style="background-image: url(images/main_bg_1.jpg)" data-number="01"></div>
+			<div class="swiper-slide tilt" style="background-image: url(images/main_bg_2.jpg)" data-number="02"></div>
+			<div class="swiper-slide tilt" style="background-image: url(images/main_bg_3.jpg)" data-number="03"></div>
+			<div class="swiper-slide tilt" style="background-image: url(images/main_bg_4.jpg)" data-number="04"></div>
+			<div class="swiper-slide tilt" style="background-image: url(images/main_bg_5.jpg)" data-number="05"></div>
+			<div class="swiper-slide tilt" style="background-image: url(images/main_bg_6.jpg)" data-number="06"></div>
+			<div class="swiper-slide tilt" style="background-image: url(images/main_bg_7.jpg)" data-number="07"></div>
+		</div>
+	</div>
+
+
+
+	<!-- 원페이지 하단 스위치 영역-->
+	<footer class="bottom_switch fixed">
+		<a href="#" class="sound magic-hover">
+			<img src="images/sound.gif" alt="사운드">
+			<span class="btn_wrap">
+				<span class="btn_span" data-hover="S O U N D - O F F "> S O U N D - O N 　</span>
+			</span>
+		</a>
+		<a href="#" class="switch share">
+			F O L L O W - M E
+			<img src="images/icn_share.png" alt="공유">
+		</a>
+		<!-- MORE 버튼 -->
+		<div class="btn_box moreb">
+			<div class="btn_wrap morew">
+				<div class="btn_span magic-hover" data-hover="MORE">MORE</div>
+			</div>
+		</div>
+	</footer>
+	<!-- 마우스 커서 효과 -->
+	<script type="text/javascript">
+		options = {
+			"cursorOuter": "circle-basic",
+			"hoverEffect": "circle-move",
+			"hoverItemMove": false,
+			"defaultCursor": false,
+			"outerWidth": 40,
+			"outerHeight": 40,
+		};
+		magicMouse(options);
+	</script>
+
+	<!-- 검수용 완성 이미지 -->
+	<!--<img src="design/main.png" class="vi">-->
 
 </body></html>
