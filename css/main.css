@@ -9,6 +9,7 @@
 @import url(about.css);
 @import url(contact.css);
 @import url(work.css);
+@import url(media.css);
 /* 폰트 */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
 
@@ -415,8 +416,6 @@ a {
     content: attr(data-hover);
     top: 100%;
 }
-
-
 
 
 
