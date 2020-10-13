@@ -337,6 +337,27 @@
     		$('body').toggleClass('open');
     	});
 
+
+    	////////////////////사운드 아이콘 온오프//////////////////////////////
+
+    	$(".sound").click(function () {
+
+
+    		//console.log("클릭");
+    		var soundImg = $(this).children("img");
+    		soundImg.attr("src", function (index, attr) {
+    			if (attr.match('on.gif')) {
+    				return attr.replace("on.gif", "off.png");
+    			} else {
+    				return attr.replace("off.png", "on.gif");
+    			}
+    		});
+
+
+    	});
+
+
+
     }); ////// jQB //////////////////////////
     ////////////////////////////////////////
     ////////////////////////////////////////

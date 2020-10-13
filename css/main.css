@@ -41,7 +41,7 @@ a {
 }
 
 h2 {
-	font-size: 63px;
+	font-size: 3.5vw;
 }
 
 body,
@@ -418,11 +418,6 @@ a {
 	vertical-align: middle;
 }
 
-.sound:hover .btn_span {
-	transform: translate3d(0, -105%, 0);
-}
-
-
 
 .btn_span {
 	display: inline-block;
@@ -435,7 +430,7 @@ a {
 .btn_span::before {
 	position: absolute;
 	content: attr(data-hover);
-	top: 105%;
+	top: 100%;
 }
 
 /* 공유버튼 */

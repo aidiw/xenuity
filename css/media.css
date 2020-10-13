@@ -16,9 +16,9 @@
 
 
 
-/*1200px이하 사이즈*/
+/*1500px이하 사이즈*/
 @media only screen and (max-width:1500px) {
-
+	/*******인덱스 페이지******/
 
 	h2 {
 		font-size: 55px;
@@ -42,29 +42,16 @@
 
 	/* 중단 구분선*/
 	.counter_border {
-		position: absolute;
 		width: 7%;
-		height: 1px;
-		background-color: #fff;
-		opacity: 0.2;
-		margin: 0 auto;
 		left: 50px;
-		bottom: 50px;
 	}
 
 
-	.mid_border.left {
-		left: 25%;
-		bottom: 50px;
+	/***************** about영역 ****************/
+	.client_list {
+		width: 100%;
+		justify-content: center;
 	}
-
-	.mid_border.right {
-		right: 25%;
-		bottom: 50px;
-	}
-
-
-
 }
 
 /*1200px이하*/
@@ -80,11 +67,9 @@
 	/*** 중단영역 ***/
 	/* 중단 타이틀 선 랩*/
 	.mid_wrap {
-		display: flex;
 		bottom: 30%;
 		width: 100%;
 	}
-
 
 	/*갤리러박스*/
 	.gbox {
@@ -92,33 +77,16 @@
 		bottom: 10px;
 	}
 
-
-
 	/* 중단 구분선*/
-	.counter_border {
-		position: absolute;
-		width: 7%;
-		height: 1px;
-		background-color: #fff;
-		opacity: 0.2;
-		margin: 0 auto;
-		left: 50px;
-		bottom: 50px;
-	}
 
 	.mid_border {
 		width: 10%;
 		display: none;
 	}
 
-	.mid_border.left {
-		left: 25%;
-		bottom: 50px;
-	}
 
 	.mid_border.right {
 		right: 27%;
-		bottom: 50px;
 	}
 
 
@@ -167,11 +135,10 @@
 
 	/* 버튼 위치조정 */
 	button {
-		opacity: 0.8;
 		background-color: transparent;
 		position: fixed;
 		z-index: 101;
-		top: 8%;
+		top: 6%;
 		right: 10%;
 		border: none;
 		width: 36px;
@@ -396,7 +363,7 @@
 	.counter_border {
 		display: none;
 	}
-	
+
 
 	.counter {
 		left: 100px;
@@ -438,36 +405,89 @@
 
 /*1024px 이하 미디어쿼리*/
 
+/* 973px 이하 모바일 미디어 쿼리*/
+@media only screen and (max-width:973px) {
+
+
+	/* 메인 타이틀 박스*/
+	.gbox {
+		left: 38%;
+		bottom: 14px;
+		width: 120%;
+	}
+	/***************** about영역 ****************/
+	.client_list {
+		width: 80%;
+		justify-content: center;
+	}
+	.client_list li{
+		width: 40%;
+	}
+
+}
+
+
+/* 973px 이하 모바일 미디어 쿼리*/
+
+/* 878px 이하 모바일 미디어 쿼리*/
+@media only screen and (max-width:878px) {
+
+	/* 메인 타이틀 박스*/
+	.gbox {
+		left: 38%;
+		bottom: 14px;
+		width: 120%;
+	}
+
+	/* 서브 타이틀 박스*/
+	.sbox {
+		position: absolute;
+		width: 25%;
+		left: 41%;
+	}
+	/***************** about영역 ****************/
+	.client_list {
+		width: 80%;
+		justify-content: center;
+	}
+	.client_list img{
+		width: 100%;
+	}
+}
+
+
+/* 878px 이하 모바일 미디어 쿼리*/
+
+
 
 
 
 /*780px이하 모바일 미디어쿼리*/
 @media only screen and (max-width:780px) {
 
+	/*헤더 로고 위치*/
+	.header_logo {
+		left: 7%;
+	}
+
 	h2 {
 		font-size: 40px;
 	}
 
 	/*** 중단영역 ***/
-	/* 중단 타이틀 선 랩*/
-	.mid_wrap {
-		display: flex;
-		bottom: 30%;
-		width: 100%;
-	}
 
 
 	/* 메인 타이틀 박스*/
 	.gbox {
-		left: -1%;
+		left: 38%;
 		bottom: 14px;
 		width: 130%;
 	}
 
 	.sbox {
 		position: absolute;
-		width: 20%;
-		left: 43%;
+		width: 100%;
+		left: 41%;
 	}
 
 	.sbox h4 {
@@ -485,27 +505,21 @@
 
 	/* 중단 구분선*/
 	.counter_border {
-		width: 7%;
+		display: none;
 	}
 
 
 	.counter {
-		left: 180px;
+		display: none;
 	}
 
 	.counter_total {
-		width: 50px;
-		height: 20px;
-		bottom: 38px;
-		left: 230px;
+		display: none;
 	}
 
 	/* 버튼 랩 */
 	.arrow_wrap {
-		position: absolute;
-		width: 100px;
-		right: 10%;
-		top: -45px;
+		display: none;
 	}
 
 	/* 섹션 배경부분 */
@@ -540,8 +554,54 @@
 }
 
 
-/****************************/
+/*780px이하 모바일 미디어쿼리*/
 
 
 
-/*px이하 모바일 미디어쿼리*/
+/*700px이하 모바일 미디어쿼리*/
+@media only screen and (max-width:700px) {
+
+	h2 {
+		font-size: 3em;
+	}
+
+	/*** 중단영역 ***/
+	/* 메인 타이틀 박스*/
+	.gbox {
+		width: 100%;
+		left: calc(50% - 100px);
+		bottom: 14px;
+	}
+
+	.sbox {
+		position: absolute;
+		width: 100%;
+		left: calc(50% - 80px);
+	}
+
+	.sbox h4 {
+		position: absolute;
+		width: 100%;
+		transition: all 2s ease-in-out;
+		top: -100px;
+		text-align: center;
+	}
+
+	.sbox span {
+		float: left;
+	}
+
+	/***************** about영역 ****************/
+	.client_list {
+		width: 80%;
+		justify-content: center;
+	}
+	.client_list li{
+		width: 30%;
+	}
+	.client_list img{
+		width: 100%;
+	}
+}
+
+/*700px이하 모바일 미디어쿼리*/
