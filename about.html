@@ -1,145 +1,181 @@
 <!DOCTYPE html>
 <html lang="ko">
 <head>
-	<meta charset="utf-8">
-	<title>xenuity</title>
-	<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
-	<!-- Link Swiper's CSS -->
-	<link rel="stylesheet" href="css/main.css">
-	<script src="js/jquery-3.4.1.min.js"></script>
-	<script src="js/jquery-ui.min.js"></script>
-	<script src="js/common.js"></script>
-	<!-- tweenmax -->
-	<script src="http://cdnjs.cloudflare.com/ajax/libs/gsap/latest/TweenMax.min.js"></script>
-	<!-- 부드러운 스크롤 -->
-	<script src="js/jquery.smoothwheel.js"></script>
+    <meta charset="utf-8">
+    <title>xenuity</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+    <!-- css -->
+    <link rel="stylesheet" href="css/main.css">
+    <!-- mediaquery-->
+    <link rel="stylesheet" href="css/media.css">
+    <!--마우스-->
+	<link rel="stylesheet" href="css/magic-mouse.css">
+	<script src="js/magic_mouse.js"></script>
+    <!-- jquery -->
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <script src="js/jquery-ui.min.js"></script>
+    <script src="js/common.js"></script>
+    <!-- tweenmax -->
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/gsap/latest/TweenMax.min.js"></script>
+    <!-- 부드러운 스크롤 -->
+    <script src="js/jquery.smoothwheel.js"></script>
 </head>
 
 <body>
-	<!-- 헤더 영역 -->
-	<header class="header fixed">
-		<h1 class="header_logo">
-			<a href="index.html">
-				<img src="images/header_logo_wh.png" alt="로고">
-			</a>
-		</h1>
-		<nav class="navigation">
-			<ul id="gnb">
-				<li class="gnb_list">
-					<a href="about.html" class="gnb_link">
-						<span class="gnb_title">
-							<span class="gnb_span" data-hover="A B O U T">
-								A B O U T
-							</span>
-						</span>
-					</a>
-				</li>
-				<li class="gnb_list">
-					<a href="work.html" class="gnb_link">
-						<span class="gnb_title">
-							<span class="gnb_span" data-hover="W O R K">
-								W O R K
-							</span>
-						</span>
-					</a>
-				</li>
-				<li class="gnb_list">
-					<a href="contact.html" class="gnb_link">
-						<span class="gnb_title">
-							<span class="gnb_span" data-hover="C O N T A C T">
-								C O N T A C T
-							</span>
-						</span>
-					</a>
-				</li>
-				<li class="gnb_list">
-					<a href="story.html" class="gnb_link">
-						<span class="gnb_title">
-							<span class="gnb_span" data-hover="S T O R Y">
-								S T O R Y
-							</span>
-						</span>
-					</a>
-				</li>
-			</ul>
-		</nav>
-	</header>
-	<!--about섹션영역-->
-	<section class="about">
-		<!--제목 및 내용-->
-		<div class="about_title">
-			<h2>ABOUT US</h2>
-			<p>Creative Studio Design</p>
-			<h3>A design studio chasing different values</h3>
-			<p>
-				XENUITY is a compound word of prefix “XEN”, which means different or heterogeneity and “UNITY”, which means<br> harmony or integration. It also means a combination that workers who have different characteristics are combined<br> and then they are transformed into another organizations.
-			</p>
-		</div>
-		<!-- 포트폴리오 버튼 -->
-		<div class="btn_box downb">
-			<div class="btn_wrap downw">
-				<div class="btn_span" data-hover="Download">Portfolio</div>
-			</div>
-		</div>
-		<!-- 클라이언트 리스트 영역-->
-		<div class="about_client">
-			<h3>
-				Our Clients
-			</h3>
-			<p>
-				Proudly served some of the most famous brands:
-			</p>
-		</div>
-		<ul class="client_list up-on-scroll">
-			<li class="client_img up-on-scroll"><img src="images/about/001.png" alt=""></li>
-			<li class="client_img up-on-scroll"><img src="images/about/002.png" alt=""></li>
-			<li class="client_img up-on-scroll"><img src="images/about/003.png" alt=""></li>
-			<li class="client_img up-on-scroll"><img src="images/about/004.png" alt=""></li>
-			<li class="client_img up-on-scroll"><img src="images/about/005.png" alt=""></li>
-			<li class="client_img up-on-scroll"><img src="images/about/006.png" alt=""></li>
-			<li class="client_img up-on-scroll"><img src="images/about/007.png" alt=""></li>
-			<li class="client_img up-on-scroll"><img src="images/about/008.png" alt=""></li>
-			<li class="client_img up-on-scroll"><img src="images/about/009.png" alt=""></li>
-			<li class="client_img up-on-scroll"><img src="images/about/010.png" alt=""></li>
-			<li class="client_img up-on-scroll"><img src="images/about/011.png" alt=""></li>
-			<li class="client_img up-on-scroll"><img src="images/about/012.png" alt=""></li>
-			<li class="client_img up-on-scroll"><img src="images/about/013.png" alt=""></li>
-			<li class="client_img up-on-scroll"><img src="images/about/014.png" alt=""></li>
-		</ul>
-		<!-- 클라이언트 부제-->
-		<div class="subt up-on-scroll">
-			<h3>
-				We will help your corporation to grow up<br>
-				more truthful and moving brand.
-			</h3>
-			<p>
-				On the basis of a variety of experience and ability, we will show design that you can confide more.<br>
-				We promise a smooth project progression by generous and<br> comfortable conversation and
-				the flexible way of working.
-			</p>
-		</div>
-		<!-- 컨택트페이지 연결박스 -->
-		<div class="contact_box up-on-scroll">
-			<h4>
-				Let`s Talk
-			</h4>
-			<h2>
-				<a href="contact.html">CONTACT</a>
-			</h2>
-		</div>
-		<!-- 원페이지 하단 스위치 영역-->
-		<div class="about_bottom_switch up-on-scroll">
-			<a href="#" class="switch sound">
-				<img src="images/sound.gif" alt="사운드">
-				SOUND - <span>ON</span>
-			</a>
-			<a href="#" class="switch share">
-				FOLLOW - ME
-				<img src="images/icn_share.png" alt="공유">
-			</a>
-		</div>
-	</section>
+    <!-- 헤더 영역 -->
+    <header class="header fixed">
+        <h1 class="header_logo">
+            <a href="index.html">
+                <img src="images/header_logo_wh.png" alt="로고">
+            </a>
+        </h1>
+        <nav class="navigation">
+            <ul id="gnb">
+                <li class="gnb_list">
+                    <a href="about.html" class="gnb_link">
+                        <span class="gnb_title">
+                            <span class="gnb_span" data-hover="A B O U T">
+                                A B O U T
+                            </span>
+                        </span>
+                    </a>
+                </li>
+                <li class="gnb_list">
+                    <a href="work.html" class="gnb_link">
+                        <span class="gnb_title">
+                            <span class="gnb_span" data-hover="W O R K">
+                                W O R K
+                            </span>
+                        </span>
+                    </a>
+                </li>
+                <li class="gnb_list">
+                    <a href="contact.html" class="gnb_link">
+                        <span class="gnb_title">
+                            <span class="gnb_span" data-hover="C O N T A C T">
+                                C O N T A C T
+                            </span>
+                        </span>
+                    </a>
+                </li>
+                <li class="gnb_list">
+                    <a href="story.html" class="gnb_link">
+                        <span class="gnb_title">
+                            <span class="gnb_span" data-hover="S T O R Y">
+                                S T O R Y
+                            </span>
+                        </span>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <!--미디어쿼리 햄버거 메뉴 버튼 -->
+    <button class="menu-toggle"></button>
+    <nav>
+        <ul class="menu">
+            <a href="about.html">
+                <li data-text="ABOUT">ABOUT</li>
+            </a>
+            <a href="work.html">
+                <li data-text="WORK">WORK</li>
+            </a>
+            <a href="contact.html">
+                <li data-text="CONTACT">CONTACT</li>
+            </a>
+            <a href="story.html">
+                <li data-text="STORY">STORY</li>
+            </a>
+        </ul>
+    </nav>
+    <!--about섹션영역-->
+    <section class="about">
+        <!--제목 및 내용-->
+        <div class="about_title">
+            <h2>ABOUT US</h2>
+            <p>Creative Studio Design</p>
+            <h3>A design studio chasing different values</h3>
+            <p>
+                XENUITY is a compound word of prefix “XEN”, which means different or heterogeneity and “UNITY”, which means<br> harmony or integration. It also means a combination that workers who have different characteristics are combined<br> and then they are transformed into another organizations.
+            </p>
+        </div>
+        <!-- 포트폴리오 버튼 -->
+        <div class="btn_box downb">
+            <div class="btn_wrap downw">
+                <div class="btn_span" data-hover="Download">Portfolio</div>
+            </div>
+        </div>
+        <!-- 클라이언트 리스트 영역-->
+        <div class="about_client">
+            <h3>
+                Our Clients
+            </h3>
+            <p>
+                Proudly served some of the most famous brands:
+            </p>
+        </div>
+        <ul class="client_list up-on-scroll">
+            <li class="client_img up-on-scroll"><img src="images/about/001.png" alt=""></li>
+            <li class="client_img up-on-scroll"><img src="images/about/002.png" alt=""></li>
+            <li class="client_img up-on-scroll"><img src="images/about/003.png" alt=""></li>
+            <li class="client_img up-on-scroll"><img src="images/about/004.png" alt=""></li>
+            <li class="client_img up-on-scroll"><img src="images/about/005.png" alt=""></li>
+            <li class="client_img up-on-scroll"><img src="images/about/006.png" alt=""></li>
+            <li class="client_img up-on-scroll"><img src="images/about/007.png" alt=""></li>
+            <li class="client_img up-on-scroll"><img src="images/about/008.png" alt=""></li>
+            <li class="client_img up-on-scroll"><img src="images/about/009.png" alt=""></li>
+            <li class="client_img up-on-scroll"><img src="images/about/010.png" alt=""></li>
+            <li class="client_img up-on-scroll"><img src="images/about/011.png" alt=""></li>
+            <li class="client_img up-on-scroll"><img src="images/about/012.png" alt=""></li>
+            <li class="client_img up-on-scroll"><img src="images/about/013.png" alt=""></li>
+            <li class="client_img up-on-scroll"><img src="images/about/014.png" alt=""></li>
+        </ul>
+        <!-- 클라이언트 부제-->
+        <div class="subt up-on-scroll">
+            <h3>
+                We will help your corporation to grow up<br>
+                more truthful and moving brand.
+            </h3>
+            <p>
+                On the basis of a variety of experience and ability, we will show design that you can confide more.<br>
+                We promise a smooth project progression by generous and<br> comfortable conversation and
+                the flexible way of working.
+            </p>
+        </div>
+        <!-- 컨택트페이지 연결박스 -->
+        <div class="contact_box up-on-scroll">
+            <h4>
+                Let`s Talk
+            </h4>
+            <h2>
+                <a href="contact.html">CONTACT</a>
+            </h2>
+        </div>
+        <!-- 원페이지 하단 스위치 영역-->
+        <div class="about_bottom_switch up-on-scroll">
+            <a href="#" class="sound magic-hover">
+                <img src="images/sound_on.gif" alt="사운드">
+                <span class="btn_wrap">
+                    <span class="btn_span" data-hover="S O U N D - O F F "> S O U N D - O N 　</span>
+                </span>
+            </a>
+            <a href="#" class="switch share">
+                FOLLOW - ME
+                <img src="images/icn_share.png" alt="공유">
+            </a>
+        </div>
+    </section>
+    <!-- 마우스 커서 효과 -->
+    <script type="text/javascript">
+        options = {
+            "cursorOuter": "circle-basic",
+            "hoverEffect": "circle-move",
+            "hoverItemMove": false,
+            "defaultCursor": false,
+            "outerWidth": 40,
+            "outerHeight": 40,
+        };
+        magicMouse(options);
+    </script>
 
-</body>
-
-</html>
+</body></html>

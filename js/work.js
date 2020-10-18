@@ -13,7 +13,8 @@
         window.location = linkLocation;
     }
 
-  
+    
+    /*****스와이퍼 부분 옵션 설정*****/
 
     $(function () { /// jQB //////////////////
       

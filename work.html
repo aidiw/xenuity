@@ -2,169 +2,202 @@
 <html lang="ko">
 
 <head>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
-	<title>xenuity</title>
-	<!-- css -->
-	<link rel="stylesheet" href="css/main.css">
-	<!-- script -->
-	<script src="js/jquery-3.4.1.min.js"></script>
-	<script src="js/jquery-ui.min.js"></script>
-	<script src="js/swiper.min.js"></script>
-	<script src="js/work.js"></script>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+    <title>xenuity</title>
+    <!-- css -->
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/media.css">
+    <link rel="stylesheet" href="css/common.css">
+    <!--마우스-->
+    <link rel="stylesheet" href="css/magic-mouse.css">
+    <script src="js/magic_mouse.js"></script>
+    <!-- script -->
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <script src="js/jquery-ui.min.js"></script>
+    <script src="js/swiper.min.js"></script>
+    <script src="js/common.js"></script>
+    <script src="js/work.js"></script>
 </head>
 
 <body>
-	<!-- 마우스 커서 효과 -->
-	<div id="mouse"></div>
-	<!-- 헤더영역 -->
-	<header class="header fixed">
-		<h1 class="header_logo">
-			<a href="index.html">
-				<img src="images/header_logo_wh.png" alt="로고">
-			</a>
-		</h1>
-		<nav class="navigation">
-			<ul id="gnb">
-				<li class="gnb_list">
-					<a href="about.html" class="gnb_link">
-						<span class="gnb_title">
-							<span class="gnb_span" data-hover="A B O U T">
-								A B O U T
-							</span>
-						</span>
-					</a>
-				</li>
-				<li class="gnb_list">
-					<a href="work.html" class="gnb_link">
-						<span class="gnb_title">
-							<span class="gnb_span" data-hover="W O R K">
-								W O R K
-							</span>
-						</span>
-					</a>
-				</li>
-				<li class="gnb_list">
-					<a href="contact.html" class="gnb_link">
-						<span class="gnb_title">
-							<span class="gnb_span" data-hover="C O N T A C T">
-								C O N T A C T
-							</span>
-						</span>
-					</a>
-				</li>
-				<li class="gnb_list">
-					<a href="story.html" class="gnb_link">
-						<span class="gnb_title">
-							<span class="gnb_span" data-hover="S T O R Y">
-								S T O R Y
-							</span>
-						</span>
-					</a>
-				</li>
-			</ul>
-		</nav>
-	</header>
+    <!-- 헤더영역 -->
+    <header class="header fixed">
+        <h1 class="header_logo">
+            <a href="index.html">
+                <img src="images/header_logo_wh.png" alt="로고">
+            </a>
+        </h1>
+        <nav class="navigation">
+            <ul id="gnb">
+                <li class="gnb_list">
+                    <a href="about.html" class="gnb_link">
+                        <span class="gnb_title">
+                            <span class="gnb_span" data-hover="A B O U T">
+                                A B O U T
+                            </span>
+                        </span>
+                    </a>
+                </li>
+                <li class="gnb_list">
+                    <a href="work.html" class="gnb_link">
+                        <span class="gnb_title">
+                            <span class="gnb_span" data-hover="W O R K">
+                                W O R K
+                            </span>
+                        </span>
+                    </a>
+                </li>
+                <li class="gnb_list">
+                    <a href="contact.html" class="gnb_link">
+                        <span class="gnb_title">
+                            <span class="gnb_span" data-hover="C O N T A C T">
+                                C O N T A C T
+                            </span>
+                        </span>
+                    </a>
+                </li>
+                <li class="gnb_list">
+                    <a href="story.html" class="gnb_link">
+                        <span class="gnb_title">
+                            <span class="gnb_span" data-hover="S T O R Y">
+                                S T O R Y
+                            </span>
+                        </span>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <!--미디어쿼리 햄버거 메뉴 버튼 -->
+    <button class="menu-toggle"></button>
+    <nav>
+        <ul class="menu">
+            <a href="about.html">
+                <li data-text="ABOUT">ABOUT</li>
+            </a>
+            <a href="work.html">
+                <li data-text="WORK">WORK</li>
+            </a>
+            <a href="contact.html">
+                <li data-text="CONTACT">CONTACT</li>
+            </a>
+            <a href="story.html">
+                <li data-text="STORY">STORY</li>
+            </a>
+        </ul>
+    </nav>
 
 
 
 
 
+    <!--스와이퍼 슬라이드 -->
+    <div class="swiper-container wcont">
+        <div class="swiper-scrollbar"></div>
+        <div class="swiper-wrapper">
+            <div class="swiper-slide wslide" style="background-image: url(images/main_bg_1.jpg)">
+                <div class="slide_caption">
+                    <h2 class="ctit">
+                        <span>S</span><span>A</span><span>M</span><span>S</span><span>U</span><span>N</span><span>G</span>
+                    </h2>
+                    <h4>
+                        <span data-hover="GO">GRAPHICS - FAMILY HUB</span>
+                    </h4>
+                </div>
+            </div>
+            <div class="swiper-slide wslide" style="background-image: url(images/main_bg_2.jpg)">
+                <div class="slide_caption">
+                    <h2 class="ctit">
+                        <span>S</span><span>A</span><span>M</span><span>S</span><span>U</span><span>N</span><span>G</span>
+                    </h2>
+                    <h4>
+                        <span data-hover="GO">GRAPHICS - FAMILY HUB</span>
+                    </h4>
+                </div>
+            </div>
+            <div class="swiper-slide wslide" style="background-image: url(images/main_bg_3.jpg)">
+                <div class="slide_caption">
+                    <h2 class="ctit">
+                        <span>S</span><span>A</span><span>M</span><span>S</span><span>U</span><span>N</span><span>G</span>
+                    </h2>
+                    <h4>
+                        <span data-hover="GO">GRAPHICS - FAMILY HUB</span>
+                    </h4>
+                </div>
+            </div>
+            <div class="swiper-slide wslide" style="background-image: url(images/main_bg_4.jpg)">
+                <div class="slide_caption">
+                    <h2 class="ctit">
+                        <span>S</span><span>A</span><span>M</span><span>S</span><span>U</span><span>N</span><span>G</span>
+                    </h2>
+                    <h4>
+                        <span data-hover="GO">GRAPHICS - FAMILY HUB</span>
+                    </h4>
+                </div>
+            </div>
+            <div class="swiper-slide wslide" style="background-image: url(images/main_bg_5.jpg)">
+                <div class="slide_caption">
+                    <h2 class="ctit">
+                        <span>S</span><span>A</span><span>M</span><span>S</span><span>U</span><span>N</span><span>G</span>
+                    </h2>
+                    <h4>
+                        <span data-hover="GO">GRAPHICS - FAMILY HUB</span>
+                    </h4>
+                </div>
+            </div>
+            <div class="swiper-slide wslide" style="background-image: url(images/main_bg_6.jpg)">
+                <div class="slide_caption">
+                    <h2 class="ctit">
+                        <span>S</span><span>A</span><span>M</span><span>S</span><span>U</span><span>N</span><span>G</span>
+                    </h2>
+                    <h4>
+                        <span data-hover="GO">GRAPHICS - FAMILY HUB</span>
+                    </h4>
+                </div>
+            </div>
+            <div class="swiper-slide wslide" style="background-image: url(images/main_bg_7.jpg)">
+                <div class="slide_caption">
+                    <h2 class="ctit">
+                        <span>S</span><span>A</span><span>M</span><span>S</span><span>U</span><span>N</span><span>G</span>
+                    </h2>
+                    <h4>
+                        <span data-hover="GO">GRAPHICS - FAMILY HUB</span>
+                    </h4>
+                </div>
+            </div>
+        </div>
+    </div>
 
+    <!-- 원페이지 하단 스위치 영역-->
+    <footer class="bottom_switch fixed">
+        <a href="#" class="sound magic-hover">
+            <img src="images/sound_on.gif" alt="사운드">
+            <span class="btn_wrap">
+                <span class="btn_span" data-hover="S O U N D - O F F "> S O U N D - O N 　</span>
+            </span>
+        </a>
+        <a href="#" class="switch share">
+            F O L L O W - M E
+            <img src="images/icn_share.png" alt="공유">
+        </a>
 
-	<!--스와이퍼 슬라이드 -->
-	<div class="swiper-container wcont">
-		<div class="swiper-scrollbar"></div>
-		<div class="swiper-wrapper">
-			<div class="swiper-slide wslide" style="background-image: url(images/main_bg_1.jpg)">
-				<div class="slide_caption">
-					<h2 class="ctit">
-						<span>S</span><span>A</span><span>M</span><span>S</span><span>U</span><span>N</span><span>G</span>
-					</h2>
-					<h4>
-						<span data-hover="GO">GRAPHICS - FAMILY HUB</span>
-					</h4>
-				</div>
-			</div>
-			<div class="swiper-slide wslide" style="background-image: url(images/main_bg_2.jpg)">
-				<div class="slide_caption">
-					<h2 class="ctit">
-						<span>S</span><span>A</span><span>M</span><span>S</span><span>U</span><span>N</span><span>G</span>
-					</h2>
-					<h4>
-						<span data-hover="GO">GRAPHICS - FAMILY HUB</span>
-					</h4>
-				</div>
-			</div>
-			<div class="swiper-slide wslide" style="background-image: url(images/main_bg_3.jpg)">
-				<div class="slide_caption">
-					<h2 class="ctit">
-						<span>S</span><span>A</span><span>M</span><span>S</span><span>U</span><span>N</span><span>G</span>
-					</h2>
-					<h4>
-						<span data-hover="GO">GRAPHICS - FAMILY HUB</span>
-					</h4>
-				</div>
-			</div>
-			<div class="swiper-slide wslide" style="background-image: url(images/main_bg_4.jpg)">
-				<div class="slide_caption">
-					<h2 class="ctit">
-						<span>S</span><span>A</span><span>M</span><span>S</span><span>U</span><span>N</span><span>G</span>
-					</h2>
-					<h4>
-						<span data-hover="GO">GRAPHICS - FAMILY HUB</span>
-					</h4>
-				</div>
-			</div>
-			<div class="swiper-slide wslide" style="background-image: url(images/main_bg_5.jpg)">
-				<div class="slide_caption">
-					<h2 class="ctit">
-						<span>S</span><span>A</span><span>M</span><span>S</span><span>U</span><span>N</span><span>G</span>
-					</h2>
-					<h4>
-						<span data-hover="GO">GRAPHICS - FAMILY HUB</span>
-					</h4>
-				</div>
-			</div>
-			<div class="swiper-slide wslide" style="background-image: url(images/main_bg_6.jpg)">
-				<div class="slide_caption">
-					<h2 class="ctit">
-						<span>S</span><span>A</span><span>M</span><span>S</span><span>U</span><span>N</span><span>G</span>
-					</h2>
-					<h4>
-						<span data-hover="GO">GRAPHICS - FAMILY HUB</span>
-					</h4>
-				</div>
-			</div>
-			<div class="swiper-slide wslide" style="background-image: url(images/main_bg_7.jpg)">
-				<div class="slide_caption">
-					<h2 class="ctit">
-						<span>S</span><span>A</span><span>M</span><span>S</span><span>U</span><span>N</span><span>G</span>
-					</h2>
-					<h4>
-						<span data-hover="GO">GRAPHICS - FAMILY HUB</span>
-					</h4>
-				</div>
-			</div>
-		</div>
-	</div>
-
-	<!-- 원페이지 하단 스위치 영역-->
-	<footer class="bottom_switch fixed">
-		<a href="#" class="sound">
-			<img src="images/sound.gif" alt="사운드">
-			<span class="btn_wrap">
-				<span class="btn_span" data-hover="S O U N D - O F F "> S O U N D - O N 　</span>
-			</span>
-		</a>
-		<a href="#" class="switch share">
-			F O L L O W - M E
-			<img src="images/icn_share.png" alt="공유">
-		</a>
-
-	</footer>
-	<!-- 검수용 완성 이미지 -->
-	<!--<img src="design/main.png" class="vi">-->
+    </footer>
+    <!-- 마우스 커서 효과 -->
+    <script type="text/javascript">
+        options = {
+            "cursorOuter": "circle-basic",
+            "hoverEffect": "circle-move",
+            "hoverItemMove": false,
+            "defaultCursor": false,
+            "outerWidth": 40,
+            "outerHeight": 40,
+        };
+        magicMouse(options);
+    </script>
+    <!-- 검수용 완성 이미지 -->
+    <!--<img src="design/main.png" class="vi">-->
 
 
 </body></html>

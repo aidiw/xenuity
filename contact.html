@@ -2,155 +2,176 @@
 <html lang="ko">
 
 <head>
-	<meta charset="utf-8">
-	<title>xenuity</title>
-	<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
-	<link rel="stylesheet" href="css/main.css">
-	<link rel="stylesheet" href="css/common.css">
-	<script src="js/jquery-3.4.1.min.js"></script>
-	<script src="js/jquery-ui.min.js"></script>
-	<script src="js/main.js"></script>
-	<script>
-		///// 로드구역 /////
-		window.addEventListener("DOMContentLoaded", function() {
-			console.log("로딩완료");
-
-		}); /////// 로드구역 //////
-	</script>
+    <meta charset="utf-8">
+    <title>xenuity</title>
+    <!--favicon-->
+    <link rel="shortcut icon" href="../images/favicon.ico">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+    <!-- css -->
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/media.css">
+    <link rel="stylesheet" href="css/common.css">
+    <!--마우스-->
+    <link rel="stylesheet" href="css/magic-mouse.css">
+    <script src="js/magic_mouse.js"></script>
+    <!-- script -->
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <script src="js/jquery-ui.min.js"></script>
+    <script src="js/swiper.min.js"></script>
+    <script src="js/common.js"></script>
+    <script src="js/work.js"></script>
 </head>
 
 <body>
-	<!-- 마우스 커서 효과 -->
-	<div id="result"></div>
-	<!-- 헤더영역 -->
-	<header class="header fixed">
-		<h1 class="header_logo">
-			<a href="index.html">
-				<img src="images/header_logo_wh.png" alt="로고">
-			</a>
-		</h1>
-		<nav class="navigation">
-			<ul id="gnb">
-				<li class="gnb_list">
-					<a href="about.html" class="gnb_link">
-						<span class="gnb_title">
-							<span class="gnb_span" data-hover="A B O U T">
-								A B O U T
-							</span>
-						</span>
-					</a>
-				</li>
-				<li class="gnb_list">
-					<a href="work.html" class="gnb_link">
-						<span class="gnb_title">
-							<span class="gnb_span" data-hover="W O R K">
-								W O R K
-							</span>
-						</span>
-					</a>
-				</li>
-				<li class="gnb_list">
-					<a href="contact.html" class="gnb_link">
-						<span class="gnb_title">
-							<span class="gnb_span" data-hover="C O N T A C T">
-								C O N T A C T
-							</span>
-						</span>
-					</a>
-				</li>
-				<li class="gnb_list">
-					<a href="story.html" class="gnb_link">
-						<span class="gnb_title">
-							<span class="gnb_span" data-hover="S T O R Y">
-								S T O R Y
-							</span>
-						</span>
-					</a>
-				</li>
-			</ul>
-		</nav>
-	</header>
-	<section class="contact">
-		<!-- 섹션 타이틀영역 -->
-		<div class="contact_title">
-			<h2><a href="contact.html">CONTACT</a></h2>
-			<p>We will help your corporation to grow up more truthful and moving brand.</p>
-		</div>
-		<!-- 구글맵 영역 -->
-		<div class="contact_map up-on-scroll">
-			<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2238.880795820596!2d126.95269705721655!3d37.47829461054353!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x357ca0275573f29d%3A0xf4fc3f611f886f11!2z7ISc7Jq47Yq567OE7IucIOq0gOyVheq1rCDrtInsspzrj5kg6rSA7JWF66GcMTLquLggMzEtNQ!5e0!3m2!1sko!2skr!4v1600418138754!5m2!1sko!2skr" width="80%" height="600" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
-		</div>
-		<div class="contact_submit up-on-scroll">
-			<h3>LET'S TALK</h3>
-			<div id="contact_form">
-				<div class="namebox up-on-scroll">
-					<input type="text" name="name" placeholder="Full Name">
-					<label for="name" class="input_label"></label>
-				</div>
-				<div class="emailbox up-on-scroll">
-					<input type="email" name="email" placeholder="E-mail">
-					<label for="email" class="input_label"></label>
-				</div>
-				<div class="subjbox up-on-scroll">
-					<textarea name="subbox" cols="30" rows="10" placeholder="Subject"></textarea>
-					<label for="subbox" class="input_label"></label>
-				</div>
-				<div class="mainbox up-on-scroll">
-					<textarea name="urmsg" cols="30" rows="10" placeholder="Your Message"></textarea>
-					<label for="urmsg" class="input_label"></label>
-				</div>
-				<a href="#" class="btn_smit up-on-scroll">Submit</a>
-			</div>
-		</div>
-		<div class="info_wrap up-on-scroll">
-			<div class="infobox">
-				<div class="icn">
-					<img src="images/icn_plane.png" alt="e-mail">
-				</div>
-				<h6>nxeno@xenuity.com</h6>
-				<p>E-mail</p>
-			</div>
-			<div class="infobox">
-				<div class="icn">
-					<img src="images/icn_location.png" alt="">
-				</div>
-				<h6>31-5, Gwanak-ro 12-gil, Gwanak-gu, Seoul, Republic of Korea</h6>
-				<p>Address</p>
-			</div>
-			<div class="infobox">
-				<div class="icn">
-					<img src="images/icn_call.png" alt="">
-				</div>
-				<h6>+82-010-3013-7163</h6>
-				<p>Phone</p>
-			</div>
-		</div>
+    <!-- 마우스 커서 효과 -->
+    <div id="result"></div>
+    <!-- 헤더영역 -->
+    <header class="header fixed">
+        <h1 class="header_logo">
+            <a href="index.html">
+                <img src="images/header_logo_wh.png" alt="로고">
+            </a>
+        </h1>
+        <nav class="navigation">
+            <ul id="gnb">
+                <li class="gnb_list">
+                    <a href="about.html" class="gnb_link">
+                        <span class="gnb_title">
+                            <span class="gnb_span" data-hover="A B O U T">
+                                A B O U T
+                            </span>
+                        </span>
+                    </a>
+                </li>
+                <li class="gnb_list">
+                    <a href="work.html" class="gnb_link">
+                        <span class="gnb_title">
+                            <span class="gnb_span" data-hover="W O R K">
+                                W O R K
+                            </span>
+                        </span>
+                    </a>
+                </li>
+                <li class="gnb_list">
+                    <a href="contact.html" class="gnb_link">
+                        <span class="gnb_title">
+                            <span class="gnb_span" data-hover="C O N T A C T">
+                                C O N T A C T
+                            </span>
+                        </span>
+                    </a>
+                </li>
+                <li class="gnb_list">
+                    <a href="story.html" class="gnb_link">
+                        <span class="gnb_title">
+                            <span class="gnb_span" data-hover="S T O R Y">
+                                S T O R Y
+                            </span>
+                        </span>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <!--미디어쿼리 햄버거 메뉴 버튼 -->
+    <button class="menu-toggle"></button>
+    <nav>
+        <ul class="menu">
+            <a href="about.html">
+                <li data-text="ABOUT">ABOUT</li>
+            </a>
+            <a href="work.html">
+                <li data-text="WORK">WORK</li>
+            </a>
+            <a href="contact.html">
+                <li data-text="CONTACT">CONTACT</li>
+            </a>
+            <a href="story.html">
+                <li data-text="STORY">STORY</li>
+            </a>
+        </ul>
+    </nav>
+    <section class="contact">
+        <!-- 섹션 타이틀영역 -->
+        <div class="contact_title">
+            <h2><a href="contact.html">CONTACT</a></h2>
+            <p>We will help your corporation to grow up more truthful and moving brand.</p>
+        </div>
+        <!-- 구글맵 영역 -->
+        <div class="contact_map up-on-scroll">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2238.880795820596!2d126.95269705721655!3d37.47829461054353!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x357ca0275573f29d%3A0xf4fc3f611f886f11!2z7ISc7Jq47Yq567OE7IucIOq0gOyVheq1rCDrtInsspzrj5kg6rSA7JWF66GcMTLquLggMzEtNQ!5e0!3m2!1sko!2skr!4v1600418138754!5m2!1sko!2skr" width="80%" height="600" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+        </div>
+        <div class="contact_submit up-on-scroll">
+            <h3>LET'S TALK</h3>
+            <div id="contact_form">
+                <div class="namebox up-on-scroll">
+                    <input type="text" name="name" placeholder="Full Name">
+                    <label for="name" class="input_label"></label>
+                </div>
+                <div class="emailbox up-on-scroll">
+                    <input type="email" name="email" placeholder="E-mail">
+                    <label for="email" class="input_label"></label>
+                </div>
+                <div class="subjbox up-on-scroll">
+                    <textarea name="subbox" cols="30" rows="10" placeholder="Subject"></textarea>
+                    <label for="subbox" class="input_label"></label>
+                </div>
+                <div class="mainbox up-on-scroll">
+                    <textarea name="urmsg" cols="30" rows="10" placeholder="Your Message"></textarea>
+                    <label for="urmsg" class="input_label"></label>
+                </div>
+                <a href="#" class="btn_smit up-on-scroll">Submit</a>
+            </div>
+        </div>
+        <div class="info_wrap up-on-scroll">
+            <div class="infobox">
+                <div class="icn">
+                    <img src="images/icn_plane.png" alt="e-mail">
+                </div>
+                <h6>nxeno@xenuity.com</h6>
+                <p>E-mail</p>
+            </div>
+            <div class="infobox">
+                <div class="icn">
+                    <img src="images/icn_location.png" alt="">
+                </div>
+                <h6>31-5, Gwanak-ro 12-gil, Gwanak-gu, Seoul, Republic of Korea</h6>
+                <p>Address</p>
+            </div>
+            <div class="infobox">
+                <div class="icn">
+                    <img src="images/icn_call.png" alt="">
+                </div>
+                <h6>+82-010-3013-7163</h6>
+                <p>Phone</p>
+            </div>
+        </div>
 
-		<!-- WORK 페이지 연결박스 -->
-		<div class="contact_box up-on-scroll">
-			<h4>
-				WORK
-			</h4>
-			<h2>
-				<a href="work.html">WORK</a>
-			</h2>
-		</div>
+        <!-- WORK 페이지 연결박스 -->
+        <div class="contact_box up-on-scroll">
+            <h4>
+                WORK
+            </h4>
+            <h2>
+                <a href="work.html">WORK</a>
+            </h2>
+        </div>
 
-	</section>
-	<!-- 원페이지 하단 스위치 영역-->
+    </section>
+    <!-- 원페이지 하단 스위치 영역-->
 
-	<footer id="footer" class="up-on-scroll">
-		<a href="#" class="sound">
-			<img src="images/sound.gif" alt="사운드">
-			<span class="btn_wrap">
-				<span class="btn_span" data-hover="S O U N D - O F F "> S O U N D - O N 　</span>
-			</span>
-		</a>
-		<a href="#" class="switch share">
-			F O L L O W - M E
-			<img src="images/icn_share.png" alt="공유">
-		</a>
-	</footer>
+    <footer id="footer" class="up-on-scroll">
+        <a href="#" class="sound magic-hover">
+            <img src="images/sound_on.gif" alt="사운드">
+            <span class="btn_wrap">
+                <span class="btn_span" data-hover="S O U N D - O F F "> S O U N D - O N 　</span>
+            </span>
+        </a>
+        <a href="#" class="switch share">
+            F O L L O W - M E
+            <img src="images/icn_share.png" alt="공유">
+        </a>
+    </footer>
 
 
 </body></html>

@@ -10,6 +10,7 @@
 @import url(contact.css);
 @import url(work.css);
 @import url(media.css);
+@import url(story.css);
 /* 폰트 */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
 
@@ -60,19 +61,6 @@ a {
 	font-weight: bold;
 }
 
-
-
-
-/* 따라다니는 마우스 */
-#mouse {
-	position: fixed;
-	background: #fff;
-	width: 30px;
-	height: 30px;
-	opacity: .4;
-	border-radius: 100%;
-	z-index: 2;
-}
 
 /* 상단 헤더 영역 */
 .fixed {
